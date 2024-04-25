@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --White-: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+ body{
+    background-color:var(--Eggshell);
+    position: relative;
+
+}
+ .center-container{
+    display:flex;
+    width:1100px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-top: 40px;
+    background-color: var(--White-);
+}
+.main-section{
+    /*width:25%;*/
+   /* background-color: var(--White-);*/
+    border-radius:20px;
+    font-family:Young Serif;
+    font-weight: 400;
+}
+ img{
+    width:700px;
+    height:200px;
+    border-radius:5px;
+    line-height: 70px;
+} 
+.heading1{
+    font-size:30px;
+    color:var(--Dark-Charcoal);
+    font-family:Outfit;
+    font-weight: 600;
+    line-height: 70px;
+} 
