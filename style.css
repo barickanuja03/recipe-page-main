@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    left:300px;
     padding-top: 40px;
     background-color: var(--White-);
 }
@@ -47,3 +48,29 @@
     font-weight: 600;
     line-height: 70px;
 } 
+.second-container{
+    background-color: var(--Rose-White);
+    height:150px;
+}
+.heading2{
+    color: var(--Dark-Charcoal);
+    font-size: 20px;
+
+}
+li{
+    font-size:17px;
+    color:var(--Wenge-Brown);
+}
+strong{
+    color: var(--Dark-Charcoal);
+    font-size: 17px;
+}
+hr{
+    color:var(--Light-Grey);
+}
+.nutrition-table{
+    display:inline-block;
+}
+td{
+    color:var(--Dark-Charcoal);
+}
