@@ -83,7 +83,7 @@ table{
 @media(max-width:998px)
 {
  html,body{
-    font-size:60%;
+    font-size:35%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -100,7 +100,7 @@ table{
 @media(max-width:768px)
 {
     html{
-        font-size:40%;
+        font-size:20%;
         width: 100%;
         margin: 0;
         padding: 0;
