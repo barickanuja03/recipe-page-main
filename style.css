@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-size:10px;
+    height:-webkit-fill-available;
+}
 :root{
     --White-: hsl(0, 0%, 100%);
     --Rose-White: hsl(330, 100%, 98%);
@@ -16,54 +20,60 @@
  body{
     background-color:var(--Eggshell);
     position: relative;
+    font-size:.2em;
+    height: 100vh;
 
 }
  .center-container{
     display:flex;
-    width:1100px;
-    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-between;
     align-items: center;
     flex-flow: column;
-    left:300px;
-    padding-top: 40px;
+    left:60rem;
+    padding-top: 4rem;
     background-color: var(--White-);
 }
-.main-section{
-    /*width:25%;*/
-   /* background-color: var(--White-);*/
-    border-radius:20px;
-    font-family:Young Serif;
+.center{
     font-weight: 400;
 }
+.main-section{
+    border-radius:2rem;
+    font-family:Young Serif;
+    font-weight: 400;
+    width:110rem;
+    margin-left: 20rem;
+    background-color: var(--Eggshell);
+}
  img{
-    width:700px;
-    height:200px;
-    border-radius:5px;
-    line-height: 70px;
+    width:84rem;
+    height:20rem;
+    border-radius:.5rem;
+    line-height: 7rem;
 } 
 .heading1{
-    font-size:30px;
+    font-size:3rem;
     color:var(--Dark-Charcoal);
     font-family:Outfit;
     font-weight: 600;
-    line-height: 70px;
+    line-height: 7rem;
 } 
 .second-container{
     background-color: var(--Rose-White);
-    height:150px;
+    height:15rem;
 }
 .heading2{
     color: var(--Dark-Charcoal);
-    font-size: 20px;
+    font-size:2rem;
 
 }
 li{
-    font-size:17px;
+    font-size:1.7rem;
     color:var(--Wenge-Brown);
 }
 strong{
     color: var(--Dark-Charcoal);
-    font-size: 17px;
+    font-size: 1.7rem;
 }
 hr{
     color:var(--Light-Grey);
@@ -73,4 +83,34 @@ hr{
 }
 td{
     color:var(--Dark-Charcoal);
+}
+@media(max-width:998px)
+{
+ html{
+    font-size:35%;
+ }
+ img{
+    width:70%;
+ }
+}
+@media(max-width:768px)
+{
+    html{
+        font-size: 45%;
+    }
+    img{
+        width:90%;
+    }
+}
+@media(max-width:375px)
+{
+    html,body{
+        font-size: 70%;
+        margin: 0;
+        padding:-10;
+        overflow-x:hidden ;
+    }
+    .center{
+        margin: 0px;
+    }
 }
