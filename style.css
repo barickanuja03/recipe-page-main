@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-*{
+ html{ 
+    font-size:10px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-html{
-    font-size:10px;
-    height:-webkit-fill-available;
 }
 :root{
     --White-: hsl(0, 0%, 100%);
@@ -22,41 +19,36 @@ html{
     position: relative;
     font-size:.2em;
     height: 100vh;
+    font-family:Young Serif;
 
-}
- .center-container{
-    display:flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: column;
-    left:60rem;
-    padding-top: 4rem;
-    background-color: var(--White-);
 }
 .center{
     font-weight: 400;
-}
+ } 
 .main-section{
     border-radius:2rem;
-    font-family:Young Serif;
+    justify-content: space-between;
+     font-family:Young Serif;
     font-weight: 400;
-    width:110rem;
+    width:700px;
     margin-left: 20rem;
-    background-color: var(--Eggshell);
 }
  img{
+
+    border-radius:.6rem;
     width:100%;
-    height:20rem;
-    border-radius:.5rem;
-    line-height: 7rem;
+    height:34rem;
 } 
+.paragraph{
+    width:100%;
+    height:auto;
+    font-size: 1.8rem;
+}
 .heading1{
     font-size:3rem;
     color:var(--Dark-Charcoal);
     font-family:Outfit;
     font-weight: 600;
-    line-height: 7rem;
     width:100%;
 } 
 .second-container{
@@ -65,7 +57,7 @@ html{
 }
 .heading2{
     color: var(--Dark-Charcoal);
-    font-size:2rem;
+    font-size:3rem;
 
 }
 li{
@@ -90,8 +82,12 @@ table{
 }
 @media(max-width:998px)
 {
- html{
-    font-size:35%;
+ html,body{
+    font-size:60%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
  }
  img{
     max-width: 100%;
@@ -104,22 +100,18 @@ table{
 @media(max-width:768px)
 {
     html{
-        font-size: 45%;
+        font-size:40%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+
     }
     img{
         max-width: 100%;
-        height: auto;
+        height:auto;
     }
-}
-@media(max-width:375px)
-{
-    html,body{
-        font-size: 70%;
-        margin: 0;
-        padding:-10;
-        overflow-x:hidden ;
-    }
-    .center{
-        margin: 0px;
+    .center-container{
+        left:-150px;
     }
 }
