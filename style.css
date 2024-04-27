@@ -81,6 +81,7 @@ td{
 table{
     width:100%;
 }
+/* ==============page responsive ===================*/
 @media(max-width:998px)
 {
  html,body{
